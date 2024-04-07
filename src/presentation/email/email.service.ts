@@ -4,14 +4,14 @@ import { LogEntity, LogSeverityLevel } from '../../domain/entities/log.entity';
 
 
 
-interface SendEmailOptions {
+export interface SendEmailOptions {
     to: string | string[];
     subject: string;
     htmlBody: string;
     attachments?: Attachment[];
 }
 
-interface Attachment {
+export interface Attachment {
     filename: string;
     path: string;
 }
